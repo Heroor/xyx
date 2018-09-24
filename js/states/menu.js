@@ -52,7 +52,7 @@ class Menu extends Phaser.State {
     addMenu()
 
     // test
-    this.state.start('practice')
+    // this.state.start('practice')
   }
 }
 

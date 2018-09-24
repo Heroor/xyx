@@ -68,7 +68,7 @@ function reset (a) {
     renderCD(cd[0], cd[1])
 
     // 时间到 结束游戏
-    cd[0] <= 0 && gameOver('lost')
+    cd[0] <= 0 && gameOver('lose')
     cd[1] <= 0 && gameOver('win')
   }, 500)
 
@@ -82,7 +82,7 @@ function reset (a) {
   //   renderCD(cd[0], cd[1])
 
   //   // 时间到 结束游戏
-  //   cd[0] <= 0 && gameOver('lost')
+  //   cd[0] <= 0 && gameOver('lose')
   //   cd[1] <= 0 && gameOver('win')
   //   loop()
   // }, 500)
@@ -94,7 +94,7 @@ function reset (a) {
 function checkOver () {
   // 调用 go.common.checkWin 判断游戏状态
   if (go.common.checkWin(board)) {
-    gameOver(['win', 'lost'][currentPlayer])
+    gameOver(['win', 'lose'][currentPlayer])
     return true
   } else if (go.common.checkDraw(board)) {
     gameOver('draw')
