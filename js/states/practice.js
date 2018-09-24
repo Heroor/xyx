@@ -18,9 +18,9 @@ function gameOver(result) {
     result,
     meName: go.userInfo.nickName,
     // 设定无头像时的默认头像
-    meAvatar: go.userInfo.avatarUrl || 'avatar_unkonw',
+    meAvatar: go.userInfo.avatarUrl || 'avatar_unknow',
     opponentName: '电脑',
-    opponentAvatar: 'avatar_unkonw',
+    opponentAvatar: 'avatar_unknow',
     // 回到首页按钮
     callback () {
       go.game.state.start('menu')
